@@ -1,42 +1,18 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>netmedya</title>
-  <meta name="fediverse:creator" content="@netmedya@mastodon.social">
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #111;
-      color: #fff;
-      text-align: center;
-      margin-top: 100px;
-    }
-
-    .verified-link {
-      font-size: 20px;
-      text-decoration: none;
-      color: #1da1f2;
-    }
-
-    .verified-link .tick {
-      color: #e0245e;
-      font-size: 20px;
-      margin-left: 5px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slither.io Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <h1>netmedya</h1>
-  <p>tarafsız dijital medya gazetesi</p>
-
-  <p>
-    <a class="verified-link" rel="me" href="https://bsky.app/profile/netmedya.bsky.social" target="_blank">
-      Bluesky <span class="tick">✔️</span>
-    </a>
-  </p>
-
+    <div class="game-container">
+        <div id="score-container">
+            <div id="player-score">Score: 0</div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+    </div>
+    <script src="game.js"></script>
 </body>
 </html>
